@@ -94,3 +94,11 @@ h1 {
     width: 100%;
   }
 }
+
+.sub-title {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.6;
+}
