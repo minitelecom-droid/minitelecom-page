@@ -71,7 +71,7 @@ h1 {
 }
 
 .section {
-  min-height: 70vh;
+  min-height: 10vh;
   padding: 80px 24px;
   text-align: center;
 }
