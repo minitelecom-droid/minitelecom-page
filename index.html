@@ -3,28 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>미니텔레콤 1호점</title>
+
+  <meta
+    name="description"
+    content="미니텔레콤 휴대폰, 인터넷TV, 알뜰폰, 선불폰 상담"
+  />
+
+  <title>미니텔레콤</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main class="hero">
-    <p class="eyebrow">MINI TELECOM</p>
-    <h1>미니텔레콤 1호점</h1>
-    <p class="description">
-      휴대폰 · 인터넷TV · 알뜰폰 · 선불폰<br />
-      정확하고 투명하게 상담해드립니다.
-    </p>
 
-    <div class="buttons">
-      <a class="button primary" href="tel:01000000000">전화 상담</a>
-      <a class="button secondary" href="#reservation">사전예약</a>
-    </div>
+<body>
+  <!-- 상단 메뉴 -->
+  <header class="header">
+    <a class="logo" href="#home">
+      MINI<span>TELECOM</span>
+    </a>
+
+    <a class="header-call" href="tel:01000000000">
+      전화 상담
+    </a>
+  </header>
+
+  <main>
+    <!-- 첫 화면 -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-label">MINI TELECOM</p>
+
+        <h1>
+          통신 상담을<br />
+          더 쉽고 정확하게
+        </h1>
+
+        <p class="hero-description">
+          휴대폰 · 인터넷TV<br />
+          알뜰폰 · 선불폰
+        </p>
+
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#reservation">
+            상담 예약
+          </a>
+
+          <a class="button button-light" href="tel:01000000000">
+            전화 문의
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="phone-card">
+          <span>MINI</span>
+          <strong>맞춤 통신 상담</strong>
+          <small>필요한 상품만 정확하게</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- 서비스 -->
+    <section class="section services">
+      <div class="section-heading">
+        <p class="section-label">SERVICE</p>
+        <h2>필요한 상담을 선택하세요</h2>
+        <p>상품별로 쉽고 빠르게 안내해드립니다.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-number">01</span>
+          <h3>휴대폰</h3>
+          <p>기기변경, 번호이동, 신규가입 상담</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">02</span>
+          <h3>인터넷TV</h3>
+          <p>통신사 비교와 결합 할인 상담</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">03</span>
+          <h3>알뜰폰</h3>
+          <p>사용량에 맞는 합리적인 요금제 안내</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">04</span>
+          <h3>선불폰</h3>
+          <p>개통 조건과 이용 방법 안내</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 매장 장점 -->
+    <section class="section benefits">
+      <div class="section-heading">
+        <p class="section-label">WHY MINI</p>
+        <h2>복잡한 조건은 쉽게</h2>
+        <p>고객에게 필요한 내용을 기준으로 설명합니다.</p>
+      </div>
+
+      <div class="benefit-list">
+        <div class="benefit-item">
+          <strong>01</strong>
+          <div>
+            <h3>맞춤 비교</h3>
+            <p>사용 패턴과 예산에 맞춰 상품을 비교합니다.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <strong>02</strong>
+          <div>
+            <h3>정확한 안내</h3>
+            <p>요금과 할인 조건을 이해하기 쉽게 안내합니다.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <strong>03</strong>
+          <div>
+            <h3>편리한 상담</h3>
+            <p>전화 또는 예약 신청으로 빠르게 상담받을 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 상담 신청 -->
+    <section id="reservation" class="section reservation">
+      <div class="section-heading">
+        <p class="section-label">RESERVATION</p>
+        <h2>상담 예약</h2>
+        <p>정보를 남겨주시면 확인 후 연락드립니다.</p>
+      </div>
+
+      <form class="reservation-form">
+        <label>
+          이름
+          <input
+            type="text"
+            name="name"
+            placeholder="이름을 입력하세요"
+            required
+          />
+        </label>
+
+        <label>
+          연락처
+          <input
+            type="tel"
+            name="phone"
+            placeholder="010-0000-0000"
+            required
+          />
+        </label>
+
+        <label>
+          상담 항목
+          <select name="service" required>
+            <option value="">선택하세요</option>
+            <option value="휴대폰">휴대폰</option>
+            <option value="인터넷TV">인터넷TV</option>
+            <option value="알뜰폰">알뜰폰</option>
+            <option value="선불폰">선불폰</option>
+          </select>
+        </label>
+
+        <label>
+          문의 내용
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="궁금한 내용을 입력하세요"
+          ></textarea>
+        </label>
+
+        <label class="agree">
+          <input type="checkbox" required />
+          <span>개인정보 수집 및 이용에 동의합니다.</span>
+        </label>
+
+        <button class="submit-button" type="submit">
+          상담 신청하기
+        </button>
+      </form>
+    </section>
   </main>
 
-  <section id="reservation" class="section">
-    <h2>사전예약 상담</h2>
-    <p>곧 상담 신청 기능을 연결할 예정입니다.</p>
-  </section>
+  <!-- 하단 정보 -->
+  <footer class="footer">
+    <strong>MINI TELECOM</strong>
+
+    <p>
+      휴대폰 · 인터넷TV · 알뜰폰 · 선불폰
+    </p>
+
+    <small>
+      © MINI TELECOM. All rights reserved.
+    </small>
+  </footer>
+
+  <!-- 모바일 하단 고정 버튼 -->
+  <nav class="bottom-bar">
+    <a href="tel:050714775330">전화</a>
+    <a href="#reservation">예약</a>
+    <a href="#" class="bottom-primary">카카오톡</a>
+  </nav>
 
   <script src="script.js"></script>
 </body>
