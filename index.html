@@ -2,215 +2,327 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  />
 
   <meta
     name="description"
-    content="미니텔레콤 휴대폰·인터넷TV·알뜰폰·선불폰·상담"
+    content="미니텔레콤 1호점 휴대폰, 인터넷TV, 알뜰폰, 선불폰, 키즈폰, 효도폰 상담"
   />
 
-  <title>미니텔레콤</title>
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>미니텔레콤 1호점</title>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- 상단 메뉴 -->
-  <header class="header">
-    <a class="logo" href="#home">
-      MINI<span>TELECOM</span>
-    </a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="store-name" href="#top" aria-label="첫 화면으로 이동">
+        미니텔레콤 1호점
+      </a>
 
-    <a class="header-call" href="tel:050714775330">
-      전화 상담
-    </a>
+      <a
+        class="header-call-button"
+        href="tel:050714775330"
+        aria-label="미니텔레콤 1호점 전화문의"
+      >
+        전화문의
+      </a>
+    </div>
   </header>
 
-  <main>
-    <!-- 첫 화면 -->
-    <section id="home" class="hero">
+  <main id="top">
+    <!-- 메인 첫 화면 -->
+    <section class="hero-section">
       <div class="hero-content">
-        <p class="hero-label">MINI TELECOM</p>
+        <p class="hero-badge">믿고 상담하는 통신전문매장</p>
 
-        <h1>
-          통신 상담을<br />
-          더 쉽고 정확하게
+        <h1 class="hero-title">
+          미니텔레콤<br />
+          1호점
         </h1>
 
-        <p class="hero-description">
-          휴대폰 · 인터넷TV<br />
-          알뜰폰 · 선불폰
+        <p class="hero-subtitle">
+          복잡한 통신상품을<br />
+          쉽고 정확하게 안내해드립니다.
         </p>
 
+        <div class="service-tags" aria-label="상담 가능 서비스">
+          <span class="service-tag">휴대폰</span>
+          <span class="service-tag">인터넷TV</span>
+          <span class="service-tag">알뜰폰</span>
+          <span class="service-tag">선불폰</span>
+          <span class="service-tag">키즈폰</span>
+          <span class="service-tag">효도폰</span>
+        </div>
+
         <div class="hero-buttons">
-          <a class="button button-dark" href="#reservation">
-            상담 예약
+          <a
+            class="main-button main-button-dark"
+            href="tel:050714775330"
+          >
+            <span class="button-icon" aria-hidden="true">☎</span>
+            <span>
+              <strong>전화문의</strong>
+              <small>0507-1477-5330</small>
+            </span>
           </a>
 
-          <a class="button button-light" href="tel:050714775330">
-            전화 문의
+          <a
+            class="main-button main-button-blue"
+            href="tel:050714775330"
+          >
+            <span class="button-icon" aria-hidden="true">◫</span>
+            <span>
+              <strong>폴더블8 시리즈 사전예약</strong>
+              <small>전화로 빠르게 상담받기</small>
+            </span>
           </a>
         </div>
+
+        <p class="hero-notice">
+          버튼을 누르면 바로 전화로 연결됩니다.
+        </p>
       </div>
 
-      <div class="hero-visual">
-        <div class="phone-card">
-          <span>미니텔레콤1호점</span>
-          <strong>맞춤 통신 상담</strong>
-          <small>필요한 상품만 정확하게</small>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone phone-left">
+          <div class="phone-screen">
+            <span>폴드8</span>
+          </div>
         </div>
+
+        <div class="phone phone-right">
+          <div class="phone-screen">
+            <span>플립8</span>
+          </div>
+        </div>
+
+        <div class="visual-glow"></div>
       </div>
     </section>
 
-    <!-- 서비스 -->
-    <section class="section services">
+    <!-- 폴더블8 사전예약 -->
+    <section class="foldable-section">
       <div class="section-heading">
-        <p class="section-label">SERVICE</p>
-        <h2>필요한 상담을 선택하세요</h2>
-        <p>상품별로 쉽고 빠르게 안내해드립니다.</p>
+        <p class="section-kicker">사전예약 상담</p>
+
+        <h2>
+          폴더블8 시리즈<br />
+          상담을 시작하세요
+        </h2>
+
+        <p>
+          폴드8과 플립8의 기기변경, 번호이동,
+          요금제와 결합할인을 전화로 안내해드립니다.
+        </p>
       </div>
 
-      <div class="service-grid">
+      <div class="foldable-grid">
+        <article class="product-card product-card-fold">
+          <div class="product-card-top">
+            <span class="product-label">갤럭시</span>
+            <h3>폴드8</h3>
+            <p>넓은 화면과 강력한 활용성</p>
+          </div>
+
+          <div class="product-mockup fold-mockup" aria-hidden="true">
+            <div class="mockup-screen">
+              <span>FOLD</span>
+            </div>
+          </div>
+
+          <a
+            class="product-call-button"
+            href="tel:050714775330"
+          >
+            폴드8 전화문의
+          </a>
+        </article>
+
+        <article class="product-card product-card-flip">
+          <div class="product-card-top">
+            <span class="product-label">갤럭시</span>
+            <h3>플립8</h3>
+            <p>작고 감각적인 폴더블 디자인</p>
+          </div>
+
+          <div class="product-mockup flip-mockup" aria-hidden="true">
+            <div class="mockup-screen">
+              <span>FLIP</span>
+            </div>
+          </div>
+
+          <a
+            class="product-call-button"
+            href="tel:050714775330"
+          >
+            플립8 전화문의
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 서비스 안내 -->
+    <section class="service-section">
+      <div class="section-heading">
+        <p class="section-kicker">상담 서비스</p>
+
+        <h2>
+          필요한 상담을<br />
+          한곳에서
+        </h2>
+
+        <p>
+          상품별 조건과 혜택을 이해하기 쉽게 비교해드립니다.
+        </p>
+      </div>
+
+      <div class="service-card-grid">
         <article class="service-card">
-          <span class="service-number">01</span>
+          <span class="service-card-number">01</span>
           <h3>휴대폰</h3>
           <p>기기변경, 번호이동, 신규가입 상담</p>
+          <a href="tel:050714775330">전화문의</a>
         </article>
 
         <article class="service-card">
-          <span class="service-number">02</span>
+          <span class="service-card-number">02</span>
           <h3>인터넷TV</h3>
-          <p>통신사 비교와 결합 할인 상담</p>
+          <p>통신사 비교와 결합할인 상담</p>
+          <a href="tel:050714775330">전화문의</a>
         </article>
 
         <article class="service-card">
-          <span class="service-number">03</span>
+          <span class="service-card-number">03</span>
           <h3>알뜰폰</h3>
-          <p>사용량에 맞는 합리적인 요금제 안내</p>
+          <p>사용량에 맞는 요금제 상담</p>
+          <a href="tel:050714775330">전화문의</a>
         </article>
 
         <article class="service-card">
-          <span class="service-number">04</span>
+          <span class="service-card-number">04</span>
           <h3>선불폰</h3>
           <p>개통 조건과 이용 방법 안내</p>
+          <a href="tel:050714775330">전화문의</a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-card-number">05</span>
+          <h3>키즈폰</h3>
+          <p>아이에게 맞는 기기와 요금제 상담</p>
+          <a href="tel:050714775330">전화문의</a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-card-number">06</span>
+          <h3>효도폰</h3>
+          <p>사용하기 편한 기기와 요금제 상담</p>
+          <a href="tel:050714775330">전화문의</a>
         </article>
       </div>
     </section>
 
     <!-- 매장 장점 -->
-    <section class="section benefits">
+    <section class="trust-section">
       <div class="section-heading">
-        <p class="section-label">WHY MINI</p>
-        <h2>복잡한 조건은 쉽게</h2>
-        <p>고객에게 필요한 내용을 기준으로 설명합니다.</p>
+        <p class="section-kicker">미니텔레콤 1호점</p>
+
+        <h2>
+          어렵게 설명하지<br />
+          않겠습니다
+        </h2>
       </div>
 
-      <div class="benefit-list">
-        <div class="benefit-item">
-          <strong>01</strong>
+      <div class="trust-list">
+        <article class="trust-item">
+          <span>01</span>
           <div>
-            <h3>맞춤 비교</h3>
-            <p>사용 패턴과 예산에 맞춰 상품을 비교합니다.</p>
+            <h3>고객 맞춤 상담</h3>
+            <p>
+              사용 패턴과 예산을 기준으로 필요한 상품을 안내합니다.
+            </p>
           </div>
-        </div>
+        </article>
 
-        <div class="benefit-item">
-          <strong>02</strong>
+        <article class="trust-item">
+          <span>02</span>
           <div>
-            <h3>정확한 안내</h3>
-            <p>요금과 할인 조건을 이해하기 쉽게 안내합니다.</p>
+            <h3>쉽고 정확한 설명</h3>
+            <p>
+              요금과 할인 조건을 복잡하지 않게 설명합니다.
+            </p>
           </div>
-        </div>
+        </article>
 
-        <div class="benefit-item">
-          <strong>03</strong>
+        <article class="trust-item">
+          <span>03</span>
           <div>
-            <h3>편리한 상담</h3>
-            <p>전화 또는 예약 신청으로 빠르게 상담받을 수 있습니다.</p>
+            <h3>한 번에 통합 상담</h3>
+            <p>
+              휴대폰부터 인터넷TV와 알뜰폰까지 함께 비교합니다.
+            </p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- 상담 신청 -->
-    <section id="reservation" class="section reservation">
-      <div class="section-heading">
-        <p class="section-label">RESERVATION</p>
-        <h2>상담 예약</h2>
-        <p>정보를 남겨주시면 확인 후 연락드립니다.</p>
+    <!-- 최종 전화 유도 -->
+    <section class="final-call-section">
+      <div class="final-call-box">
+        <p>무엇을 선택해야 할지 고민되시나요?</p>
+
+        <h2>
+          전화 한 통으로<br />
+          편하게 상담받으세요
+        </h2>
+
+        <a
+          class="final-call-button"
+          href="tel:050714775330"
+        >
+          <span>☎</span>
+          <div>
+            <strong>0507-1477-5330</strong>
+            <small>지금 전화문의</small>
+          </div>
+        </a>
       </div>
-
-      <form class="reservation-form">
-        <label>
-          이름
-          <input
-            type="text"
-            name="name"
-            placeholder="이름을 입력하세요"
-            required
-          />
-        </label>
-
-        <label>
-          연락처
-          <input
-            type="tel"
-            name="phone"
-            placeholder="010-0000-0000"
-            required
-          />
-        </label>
-
-        <label>
-          상담 항목
-          <select name="service" required>
-            <option value="">선택하세요</option>
-            <option value="휴대폰">휴대폰</option>
-            <option value="인터넷TV">인터넷TV</option>
-            <option value="알뜰폰">알뜰폰</option>
-            <option value="선불폰">선불폰</option>
-          </select>
-        </label>
-
-        <label>
-          문의 내용
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="궁금한 내용을 입력하세요"
-          ></textarea>
-        </label>
-
-        <label class="agree">
-          <input type="checkbox" required />
-          <span>개인정보 수집 및 이용에 동의합니다.</span>
-        </label>
-
-        <button class="submit-button" type="submit">
-          상담 신청하기
-        </button>
-      </form>
     </section>
   </main>
 
-  <!-- 하단 정보 -->
-  <footer class="footer">
-    <strong>MINI TELECOM</strong>
+  <!-- 하단 -->
+  <footer class="site-footer">
+    <strong>미니텔레콤 1호점</strong>
 
     <p>
-      휴대폰 · 인터넷TV · 알뜰폰 · 선불폰
+      휴대폰 · 인터넷TV · 알뜰폰 · 선불폰 · 키즈폰 · 효도폰
     </p>
 
+    <a href="tel:050714775330">
+      대표문의 0507-1477-5330
+    </a>
+
     <small>
-      © MINI TELECOM. All rights reserved.
+      © 미니텔레콤 1호점. All rights reserved.
     </small>
   </footer>
 
-  <!-- 모바일 하단 고정 버튼 -->
-  <nav class="bottom-bar">
-    <a href="tel:050714775330">전화</a>
-    <a href="#reservation">예약</a>
-    <a href="#" class="bottom-primary">카카오톡</a>
+  <!-- 모바일 하단 고정 전화 버튼 -->
+  <nav class="mobile-bottom-bar" aria-label="빠른 전화문의">
+    <a href="tel:050714775330">
+      <span class="bottom-call-icon" aria-hidden="true">☎</span>
+      <span>
+        <strong>전화문의</strong>
+        <small>0507-1477-5330</small>
+      </span>
+    </a>
   </nav>
 
   <script src="script.js"></script>
