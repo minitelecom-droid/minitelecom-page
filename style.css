@@ -95,10 +95,10 @@ h1 {
   }
 }
 
-.sub-title {
-  margin-top: 15px;
-  font-size: 10px;
-  font-weight: 100;
-  color: #666;
-  line-height: 1.5;
+.reservation-description {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
 }
