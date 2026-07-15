@@ -3,59 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>미니텔레콤 1호점</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <main class="hero">
-    <p class="eyebrow">우리동네통신전문매장</p>
-    <h1>미니텔레콤 1호점</h1>
+
+  <!-- 상단 메뉴 -->
+  <header class="top-menu">
+    <a class="menu-logo" href="#top">
+      미니텔레콤 1호점
+    </a>
+
+    <nav class="menu-links">
+      <a href="#reservation">
+        일정안내
+      </a>
+
+      <a
+        class="reservation-button"
+        href="https://naver.me/xF4BrEwA"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        사전예약
+      </a>
+    </nav>
+  </header>
+
+  <!-- 첫 화면 -->
+  <main id="top" class="hero">
+    <p class="eyebrow">
+      우리동네통신전문매장
+    </p>
+
+    <h1>
+      미니텔레콤 1호점
+    </h1>
+
     <p class="description">
       휴대폰 · 인터넷TV · 알뜰폰 · 선불폰<br />
       정확하고 투명하게 상담해드립니다.
     </p>
 
     <div class="buttons">
-      <a class="button primary" href="tel:050714775330">전화 상담</a>
-      <a class="button secondary" href="#reservation">폴더블8 사전예약 일정안내</a>
+      <a
+        class="button primary"
+        href="tel:050714775330"
+      >
+        전화 상담
+      </a>
+
+      <a
+        class="button secondary"
+        href="#reservation"
+      >
+        폴더블8 일정안내
+      </a>
+
+      <a
+        class="button reservation-main"
+        href="https://naver.me/xF4BrEwA"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        폴더블8 사전예약
+      </a>
     </div>
   </main>
 
+  <!-- 폴더블8 안내 -->
   <section id="reservation" class="section">
-    <h2>폴더블8 사전예약 일정안내</h2>
+    <h2>
+      폴더블8 사전예약 일정안내
+    </h2>
+
     <p class="reservation-description">
-새로운 폴더블의 시작! 폴더블8 시리즈의 일정을 확인해 주세요!
-</p>
+      새로운 폴더블의 시작! 폴더블8 시리즈의 일정을 확인해 주세요!
+    </p>
+
+    <!-- 일정 카드 -->
+    <div class="schedule">
+
+      <article class="schedule-card">
+        <span class="schedule-date">
+          2026.07.22(수)
+        </span>
+
+        <h3>언팩 행사</h3>
+
+        <p>
+          삼성전자 갤럭시 폴더블8 시리즈 공식 공개
+        </p>
+      </article>
+
+      <article class="schedule-card">
+        <span class="schedule-date">
+          2026.07.28(화) ~ 08.03(월)
+        </span>
+
+        <h3>사전예약 진행</h3>
+
+        <p>
+          사전예약 신청 및 다양한 혜택 제공
+        </p>
+      </article>
+
+      <article class="schedule-card">
+        <span class="schedule-date">
+          2026.08.04(화) ~ 08.07(금)
+        </span>
+
+        <h3>4일간 사전개통 진행</h3>
+
+        <p>
+          사전예약 고객 우선 개통
+        </p>
+      </article>
+
+      <article class="schedule-card">
+        <span class="schedule-date">
+          2026.08.07(금)
+        </span>
+
+        <h3>정식 출시</h3>
+
+        <p>
+          전국 매장에서 공식 판매 시작
+        </p>
+      </article>
+
+    </div>
+
+    <!-- 하단 예약 버튼 -->
+    <a
+      class="naver-form-button"
+      href="https://naver.me/xF4BrEwA"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      폴더블8 사전예약 신청하기
+    </a>
   </section>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-<div class="schedule">
-
-  <div class="schedule-card">
-    <span class="schedule-date">2026.07.22(수)</span>
-    <h3>언팩 행사</h3>
-    <p>삼성전자 갤럭시 폴더블8 시리즈 공식 공개</p>
-  </div>
-
-  <div class="schedule-card">
-    <span class="schedule-date">2026.07.28(화) ~ 08.03(월)</span>
-    <h3>사전예약 진행</h3>
-    <p>사전예약 신청 및 다양한 혜택 제공</p>
-  </div>
-
-  <div class="schedule-card">
-    <span class="schedule-date">2026.08.04(화) ~ 08.07(금)</span>
-    <h3>4일간 사전개통 진행</h3>
-    <p>사전예약 고객 우선 개통</p>
-  </div>
-
-  <div class="schedule-card">
-    <span class="schedule-date">2026.08.07(금)</span>
-    <h3>정식 출시</h3>
-    <p>전국 매장에서 공식 판매 시작</p>
-  </div>
-
-</div>
