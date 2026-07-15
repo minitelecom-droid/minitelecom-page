@@ -137,3 +137,87 @@ h1 {
     color:#666;
     line-height:1.6;
 }
+
+/* 상단 메뉴 */
+.top-menu {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 64px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-logo {
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-links > a {
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu-links .reservation-button {
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+}
+
+/* 첫 화면 네이버폼 버튼 */
+.reservation-main {
+  background: #03c75a;
+  color: #fff;
+  border: 0;
+}
+
+/* 일정 아래 네이버폼 버튼 */
+.naver-form-button {
+  width: min(100%, 420px);
+  margin: 32px auto 0;
+  padding: 17px 20px;
+  display: block;
+  border-radius: 999px;
+  background: #03c75a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 휴대폰 화면 */
+@media (max-width: 480px) {
+  .top-menu {
+    padding: 9px 14px;
+  }
+
+  .menu-logo {
+    font-size: 14px;
+  }
+
+  .menu-links > a {
+    font-size: 12px;
+  }
+
+  .menu-links > a:first-child {
+    display: none;
+  }
+}
