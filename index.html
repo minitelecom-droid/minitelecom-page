@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <meta
+    name="description"
+    content="미니텔레콤 1호점 - 휴대폰, 인터넷TV, 알뜰폰, 선불폰 상담"
+  />
+
   <title>미니텔레콤 1호점</title>
 
   <link rel="stylesheet" href="style.css" />
@@ -11,150 +16,336 @@
 
 <body>
 
-  <!-- 상단 메뉴 -->
-  <header class="top-menu">
-    <a class="menu-logo" href="#top">
-      미니텔레콤 1호점
-    </a>
+  <!-- 상단 고정 메뉴 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="홈으로 이동">
+        <span class="brand-mark">M</span>
 
-<nav class="menu-links">
+        <span class="brand-text">
+          <strong>미니텔레콤</strong>
+          <small>1호점</small>
+        </span>
+      </a>
 
-  <a
-    href="https://ictmarket.or.kr:8443/precon/pop_CertIcon.do?PRECON_REQ_ID=PRE0000006017&YN=1"
-    target="_blank"
-    rel="noopener noreferrer">
-    사전승낙서
-  </a>
+      <nav class="header-nav" aria-label="주요 메뉴">
+        <a
+          href="https://ictmarket.or.kr:8443/precon/pop_CertIcon.do?PRECON_REQ_ID=PRE0000006017&YN=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          사전승낙서
+        </a>
 
-  <a href="#reservation">
-    일정안내
-  </a>
+        <a href="#foldable">
+          일정안내
+        </a>
 
-  <a
-    class="reservation-button"
-    href="https://naver.me/xF4BrEwA"
-    target="_blank"
-    rel="noopener noreferrer">
-    사전예약
-  </a>
-
-</nav>
+        <a
+          class="header-reservation"
+          href="https://naver.me/xF4BrEwA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          사전예약
+        </a>
+      </nav>
+    </div>
   </header>
 
-  <!-- 첫 화면 -->
-  <main id="top" class="hero">
-    <p class="eyebrow">
-      우리동네통신전문매장
-    </p>
+  <main>
 
-    <h1>
-      미니텔레콤 1호점
-    </h1>
+    <!-- 메인 화면 -->
+    <section id="home" class="hero">
+      <div class="hero-background"></div>
 
-    <p class="description">
-      휴대폰 · 인터넷TV · 알뜰폰 · 선불폰<br />
-      정확하고 투명하게 상담해드립니다.
-    </p>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="section-label">MINI TELECOM</p>
 
-    <div class="buttons">
-      <a
-        class="button primary"
-        href="tel:050714775330"
-      >
-        전화 상담
-      </a>
+          <h1>
+            믿고 상담할 수 있는<br />
+            우리 동네 통신 전문 매장
+          </h1>
 
-      <a
-        class="button secondary"
-        href="#reservation"
-      >
-        폴더블8 일정안내
-      </a>
+          <p class="hero-description">
+            휴대폰 · 인터넷TV · 알뜰폰 · 선불폰<br />
+            복잡한 통신 상품을 정확하고 투명하게 안내해 드립니다.
+          </p>
 
-      <a
-        class="button reservation-main"
-        href="https://naver.me/xF4BrEwA"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        폴더블8 사전예약
-      </a>
-    </div>
+          <div class="hero-actions">
+            <a class="button button-dark" href="tel:050714775330">
+              전화 상담
+            </a>
+
+            <a
+              class="button button-accent"
+              href="https://naver.me/xF4BrEwA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              폴더블8 사전예약
+            </a>
+          </div>
+
+          <div class="hero-info">
+            <div>
+              <span>상담 분야</span>
+              <strong>휴대폰 · 인터넷 · 알뜰폰</strong>
+            </div>
+
+            <div>
+              <span>문의 전화</span>
+              <strong>0507-1477-5330</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone phone-back"></div>
+          <div class="phone phone-front"></div>
+          <div class="visual-badge">
+            <span>FOLDABLE 8</span>
+            <strong>사전예약 안내</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 서비스 안내 -->
+    <section class="content-section services-section">
+      <div class="section-heading">
+        <p class="section-label">OUR SERVICES</p>
+
+        <h2>필요한 통신 서비스를 한곳에서</h2>
+
+        <p>
+          고객님의 사용 환경과 예산에 맞춰 알기 쉽게 상담해 드립니다.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">01</div>
+          <h3>휴대폰</h3>
+          <p>
+            신규가입, 번호이동, 기기변경까지 조건을 비교해 안내합니다.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">02</div>
+          <h3>인터넷 · TV</h3>
+          <p>
+            설치 지역과 사용 패턴에 맞는 결합상품을 안내합니다.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">03</div>
+          <h3>알뜰폰</h3>
+          <p>
+            통화량과 데이터 사용량에 맞춰 합리적인 요금제를 찾아드립니다.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">04</div>
+          <h3>선불폰</h3>
+          <p>
+            간편한 개통과 충전 방법을 이해하기 쉽게 안내합니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 외국인 고객 환영 -->
+    <section class="content-section welcome-section">
+      <div class="welcome-panel">
+        <div class="welcome-copy">
+          <p class="section-label">WELCOME</p>
+
+          <h2>
+            외국인 고객님도<br />
+            편하게 방문해 주세요
+          </h2>
+
+          <p>
+            언어와 국적에 관계없이 필요한 통신 서비스를 친절하게 안내해
+            드립니다.
+          </p>
+        </div>
+
+        <div class="language-list">
+          <div class="language-item">
+            <span>English</span>
+            <p>Welcome to Mini Telecom.</p>
+          </div>
+
+          <div class="language-item">
+            <span>Tiếng Việt</span>
+            <p>Chào mừng bạn đến với Mini Telecom.</p>
+          </div>
+
+          <div class="language-item">
+            <span>ภาษาไทย</span>
+            <p>ยินดีต้อนรับสู่ Mini Telecom</p>
+          </div>
+
+          <div class="language-item">
+            <span>Монгол</span>
+            <p>Mini Telecom-д тавтай морилно уу.</p>
+          </div>
+
+          <div class="language-item">
+            <span>Filipino</span>
+            <p>Maligayang pagdating sa Mini Telecom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 폴더블8 일정 -->
+    <section id="foldable" class="content-section foldable-section">
+      <div class="foldable-intro">
+        <div>
+          <p class="section-label">FOLDABLE 8</p>
+
+          <h2>폴더블8 사전예약 일정안내</h2>
+
+          <p>
+            새로운 폴더블의 시작. 주요 일정을 확인하고 미리 예약해 보세요.
+          </p>
+        </div>
+
+        <a
+          class="text-link"
+          href="https://naver.me/xF4BrEwA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          사전예약 바로가기
+          <span>→</span>
+        </a>
+      </div>
+
+      <div class="schedule-grid">
+        <article class="schedule-card">
+          <span class="schedule-number">01</span>
+          <p class="schedule-date">2026.07.22(수)</p>
+          <h3>언팩 행사</h3>
+          <p>
+            삼성전자 갤럭시 폴더블8 시리즈 공식 공개
+          </p>
+        </article>
+
+        <article class="schedule-card">
+          <span class="schedule-number">02</span>
+          <p class="schedule-date">2026.07.28(화) ~ 08.03(월)</p>
+          <h3>사전예약 진행</h3>
+          <p>
+            사전예약 신청 및 다양한 혜택 제공
+          </p>
+        </article>
+
+        <article class="schedule-card">
+          <span class="schedule-number">03</span>
+          <p class="schedule-date">2026.08.04(화) ~ 08.07(금)</p>
+          <h3>사전개통 진행</h3>
+          <p>
+            사전예약 고객 우선 개통
+          </p>
+        </article>
+
+        <article class="schedule-card">
+          <span class="schedule-number">04</span>
+          <p class="schedule-date">2026.08.07(금)</p>
+          <h3>정식 출시</h3>
+          <p>
+            전국 매장에서 공식 판매 시작
+          </p>
+        </article>
+      </div>
+
+      <div class="reservation-panel">
+        <div>
+          <span>FOLDABLE 8 PRE-ORDER</span>
+          <h3>지금 사전예약을 신청하세요</h3>
+          <p>
+            신청 내용을 확인한 뒤 순서대로 안내해 드립니다.
+          </p>
+        </div>
+
+        <a
+          class="button button-white"
+          href="https://naver.me/xF4BrEwA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          사전예약 신청하기
+        </a>
+      </div>
+    </section>
+
+    <!-- 상담 안내 -->
+    <section class="content-section contact-section">
+      <div class="contact-card">
+        <p class="section-label">CONTACT</p>
+
+        <h2>통신 상담이 필요하신가요?</h2>
+
+        <p>
+          복잡한 조건은 줄이고, 꼭 필요한 내용만 정확하게 안내해 드립니다.
+        </p>
+
+        <div class="contact-actions">
+          <a class="button button-dark" href="tel:050714775330">
+            0507-1477-5330
+          </a>
+
+          <a
+            class="button button-outline"
+            href="https://ictmarket.or.kr:8443/precon/pop_CertIcon.do?PRECON_REQ_ID=PRE0000006017&YN=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            사전승낙서 확인
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- 폴더블8 안내 -->
-  <section id="reservation" class="section">
-    <h2>
-      폴더블8 사전예약 일정안내
-    </h2>
+  <!-- 푸터 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>미니텔레콤 1호점</strong>
+        <p>휴대폰 · 인터넷TV · 알뜰폰 · 선불폰</p>
+      </div>
 
-    <p class="reservation-description">
-      새로운 폴더블의 시작! 폴더블8 시리즈의 일정을 확인해 주세요!
-    </p>
-
-    <!-- 일정 카드 -->
-    <div class="schedule">
-
-      <article class="schedule-card">
-        <span class="schedule-date">
-          2026.07.22(수)
-        </span>
-
-        <h3>언팩 행사</h3>
-
-        <p>
-          삼성전자 갤럭시 폴더블8 시리즈 공식 공개
-        </p>
-      </article>
-
-      <article class="schedule-card">
-        <span class="schedule-date">
-          2026.07.28(화) ~ 08.03(월)
-        </span>
-
-        <h3>사전예약 진행</h3>
-
-        <p>
-          사전예약 신청 및 다양한 혜택 제공
-        </p>
-      </article>
-
-      <article class="schedule-card">
-        <span class="schedule-date">
-          2026.08.04(화) ~ 08.07(금)
-        </span>
-
-        <h3>4일간 사전개통 진행</h3>
-
-        <p>
-          사전예약 고객 우선 개통
-        </p>
-      </article>
-
-      <article class="schedule-card">
-        <span class="schedule-date">
-          2026.08.07(금)
-        </span>
-
-        <h3>정식 출시</h3>
-
-        <p>
-          전국 매장에서 공식 판매 시작
-        </p>
-      </article>
-
+      <p class="copyright">
+        © 2026 MINI TELECOM. All rights reserved.
+      </p>
     </div>
+  </footer>
 
-    <!-- 하단 예약 버튼 -->
+  <!-- 모바일 하단 고정 버튼 -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:050714775330">
+      전화상담
+    </a>
+
     <a
-      class="naver-form-button"
+      class="mobile-reservation"
       href="https://naver.me/xF4BrEwA"
       target="_blank"
       rel="noopener noreferrer"
     >
-      폴더블8 사전예약 신청하기
+      사전예약
     </a>
-  </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
