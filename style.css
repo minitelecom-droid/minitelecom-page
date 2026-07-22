@@ -1477,3 +1477,5 @@ select {
     font-size: 7.6px;
   }
 }
+
+.footer-subtitle{font-size:14px;color:#94a3b8;margin:0 0 8px}.footer-title{display:block;font-size:30px;font-weight:800;margin-bottom:12px}.footer-service{margin:0 0 8px;font-size:16px}.footer-address{margin:0;color:#94a3b8;font-size:14px}
