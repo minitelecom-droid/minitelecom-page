@@ -1221,3 +1221,145 @@ select {
     font-size: 7.8px;
   }
 }
+
+/* =========================================================
+   v5 최종 수정: 폴더블8 Hero PC·모바일 반응형
+   - PC에서 좌우 경계가 느껴지지 않도록 이미지 배경 제거
+   - 모바일에서 제품 이미지 전체 노출
+   ========================================================= */
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.product-image {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: min(100%, 700px);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transform: none;
+  object-fit: contain;
+  mix-blend-mode: normal;
+}
+
+.visual-circle {
+  left: 50%;
+  top: 50%;
+  width: min(92%, 680px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%);
+  opacity: 0.72;
+}
+
+.product-card {
+  right: 4%;
+  bottom: 8%;
+}
+
+@media (max-width: 1080px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(460px, 0.95fr);
+  }
+
+  .product-image {
+    width: min(100%, 620px);
+  }
+}
+
+@media (max-width: 860px) {
+  .hero {
+    padding-top: 52px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .hero-visual {
+    min-height: 0;
+    padding: 12px 0 28px;
+  }
+
+  .product-image {
+    width: min(100%, 620px);
+  }
+
+  .visual-circle {
+    width: min(92vw, 540px);
+  }
+
+  .product-card {
+    right: 3%;
+    bottom: 5%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 38px;
+  }
+
+  .hero-inner {
+    width: calc(100% - 28px);
+    gap: 18px;
+  }
+
+  .hero-visual {
+    min-height: 0;
+    padding: 8px 0 18px;
+    overflow: visible;
+  }
+
+  .product-image {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .visual-circle {
+    width: min(96vw, 410px);
+    opacity: 0.58;
+  }
+
+  .product-card {
+    right: 0;
+    bottom: 4px;
+    min-width: 146px;
+    padding: 13px 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-inner {
+    width: calc(100% - 22px);
+  }
+
+  .product-image {
+    max-width: 380px;
+  }
+
+  .product-card {
+    min-width: 132px;
+    padding: 11px 12px;
+  }
+
+  .product-card span {
+    font-size: 13px;
+  }
+
+  .product-card strong {
+    font-size: 16px;
+  }
+}
