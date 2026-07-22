@@ -1363,3 +1363,19 @@ select {
     font-size: 16px;
   }
 }
+
+/* 카드 마우스 오버 효과 */
+.service-card,
+.schedule-grid article {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-card:hover,
+.schedule-grid article:hover {
+  transform: translateY(-7px);
+  border-color: #d5def3;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
+}
