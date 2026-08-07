@@ -103,50 +103,92 @@
   .event-product-image { height: 250px; width: 96%; }
 }
 
-/* v4 final homepage polish */
-.hero-inner{grid-template-columns:minmax(0,.9fr) minmax(520px,1.1fr);min-height:720px}
-.hero-visual{min-height:720px;display:flex;align-items:center;justify-content:flex-end;overflow:visible}
-.hero-visual img{position:static;width:100%;max-width:760px;height:auto;transform:none;mix-blend-mode:normal;object-fit:contain;object-position:center right}
-.visual-ring,.hero-badge{display:none!important}
+/* v4 mobile event-card layout fix: 상담하기 겹침 방지 */
+@media (max-width: 780px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 
-.event-grid{gap:22px}
-.event-card,.event-card.featured{min-height:560px;padding:30px;background:#fff;color:#111827;border:1px solid #e4e9f3;box-shadow:0 14px 36px rgba(15,23,42,.07);transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease,background .28s ease,color .28s ease}
-.event-card::after,.event-card.featured::after{display:none!important}
-.event-card:hover{background:#fff;color:#111827;border-color:var(--blue);transform:translateY(-8px);box-shadow:0 24px 48px rgba(49,101,223,.18)}
-.event-card:hover>p,.event-card:hover h3,.event-card:hover small{color:inherit}
-.event-card:hover a{color:var(--blue)}
-.event-card:hover .pill{color:#fff;background:var(--blue)}
-.event-card>p{margin-top:42px}
-.event-card a{bottom:315px;z-index:3}
-.event-product-image{left:50%;bottom:0;width:95%;height:300px;object-fit:contain;object-position:center bottom;transform:translateX(-50%);mix-blend-mode:multiply;transition:transform .35s ease,filter .35s ease}
-.event-card:hover .event-product-image{transform:translateX(-50%) scale(1.035);filter:drop-shadow(0 16px 18px rgba(15,23,42,.15));mix-blend-mode:multiply}
+  .event-card,
+  .event-card.featured {
+    min-height: 0;
+    padding: 28px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+  }
 
-.plan-grid{gap:20px}
-.plan-card{border:1px solid #dfe5ef;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease}
-.plan-card.popular{border:1px solid #dfe5ef;box-shadow:0 12px 35px rgba(15,23,42,.07)}
-.plan-card:hover,.plan-card.popular:hover{border-color:var(--blue);transform:translateY(-6px);box-shadow:0 20px 42px rgba(49,101,223,.15)}
-.plan-category{display:block;margin-bottom:12px;font-size:14px;font-weight:950;letter-spacing:-.03em}
-.plan-category.mvno{color:#2463d4}
-.plan-category.prepaid{color:#7c3aed}
-.prepaid-card .plan-type{color:#7c3aed;background:#f2eaff}
-.prepaid-card>a{background:#6d28d9}
+  .event-card > p,
+  .event-card.featured > p {
+    margin: 38px 0 0;
+    line-height: 1.35;
+  }
 
-@media(max-width:1050px){
- .hero-inner{grid-template-columns:1fr 470px}
- .hero-visual img{max-width:650px}
+  .event-card h3,
+  .event-card.featured h3 {
+    margin: 4px 0 12px;
+    line-height: 1.15;
+  }
+
+  .event-card small,
+  .event-card.featured small {
+    display: block;
+    min-height: 0;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  .event-card a,
+  .event-card.featured a {
+    position: static;
+    display: inline-flex;
+    margin-top: 14px;
+    line-height: 1.35;
+    z-index: 3;
+  }
+
+  .event-product-image {
+    position: static;
+    width: 92%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: center;
+    margin: 24px auto 0;
+    transform: none;
+    mix-blend-mode: multiply;
+  }
+
+  .event-card:hover .event-product-image {
+    transform: scale(1.03);
+  }
 }
-@media(max-width:780px){
- .hero-inner{grid-template-columns:1fr;padding-top:45px}
- .hero-visual{min-height:470px;justify-content:center}
- .hero-visual img{max-width:650px;width:100%}
- .event-card,.event-card.featured{min-height:535px}
- .event-card a{bottom:300px}
- .event-product-image{height:285px}
-}
-@media(max-width:580px){
- .hero-visual{min-height:390px}
- .hero-visual img{width:112%;max-width:none;margin-left:-6%}
- .event-card,.event-card.featured{min-height:500px}
- .event-card a{bottom:275px}
- .event-product-image{height:260px;width:100%}
+
+@media (max-width: 580px) {
+  .event-grid { gap: 24px; }
+
+  .event-card,
+  .event-card.featured {
+    padding: 26px 22px 24px;
+    border-radius: 24px;
+  }
+
+  .event-card > p,
+  .event-card.featured > p {
+    margin-top: 34px;
+  }
+
+  .event-card a,
+  .event-card.featured a {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  .event-product-image {
+    width: 94%;
+    max-height: 280px;
+    margin-top: 22px;
+  }
 }
