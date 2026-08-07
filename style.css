@@ -192,3 +192,111 @@
     margin-top: 22px;
   }
 }
+
+
+/* ===== 2026-08-07 requested refinements ===== */
+/* 1) 즉시개통 3개 모델: 파란색 hover 제거, 흰색 유지 + 살짝 떠오르는 효과 */
+.event-card,
+.event-card.featured {
+  color: var(--text);
+  background: #fff;
+  border-color: var(--line);
+  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+}
+.event-card.featured h3,
+.event-card.featured a,
+.event-card > p,
+.event-card.featured > p,
+.event-card h3,
+.event-card.featured h3,
+.event-card small,
+.event-card.featured small,
+.event-card a,
+.event-card.featured a {
+  color: inherit;
+}
+.event-card > p,
+.event-card.featured > p { color:#9aa6bb; }
+.event-card a,
+.event-card.featured a { color:var(--blue); }
+.event-card .pill,
+.event-card.featured .pill {
+  color:var(--blue);
+  background:#eaf0ff;
+}
+.event-card:hover,
+.event-card.featured:hover {
+  color:var(--text);
+  background:#fff;
+  border-color:#d8deea;
+  transform:translateY(-7px);
+  box-shadow:0 24px 54px rgba(15,23,42,.14);
+}
+.event-card:hover > p,
+.event-card.featured:hover > p { color:#9aa6bb; }
+.event-card:hover h3,
+.event-card.featured:hover h3 { color:var(--text); }
+.event-card:hover small,
+.event-card.featured:hover small { color:inherit; }
+.event-card:hover a,
+.event-card.featured:hover a { color:var(--blue); }
+.event-card:hover .pill,
+.event-card.featured:hover .pill {
+  color:var(--blue);
+  background:#eaf0ff;
+}
+.event-card:hover .event-product-image {
+  filter:drop-shadow(0 16px 20px rgba(15,23,42,.12));
+  mix-blend-mode:multiply;
+}
+
+/* 2) 대표 요금제 미리보기: 기본 테두리는 동일, 마우스를 올린 카드만 파란 테두리 */
+.plan-card,
+.plan-card.popular {
+  border:1px solid var(--line);
+  box-shadow:0 12px 35px rgba(15,23,42,.07);
+  transition:border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+.plan-card:hover,
+.plan-card.popular:hover {
+  border-color:var(--blue);
+  box-shadow:0 18px 42px rgba(49,101,223,.14);
+  transform:translateY(-4px);
+}
+
+/* 3) 모바일 메뉴 버튼: 햄버거 왼쪽에 '메뉴보기' 표시 */
+.menu-toggle .menu-label{display:none}
+.menu-toggle .menu-lines{display:block;width:24px}
+.menu-toggle .menu-lines i{display:block;height:2px;margin:5px 0;background:#111827;border-radius:3px}
+
+@media(max-width:780px){
+  .menu-toggle{
+    display:flex;
+    width:auto;
+    min-width:92px;
+    height:42px;
+    padding:7px 6px 7px 10px;
+    align-items:center;
+    justify-content:flex-end;
+    gap:9px;
+    border-radius:10px;
+    color:#111827;
+    cursor:pointer;
+  }
+  .menu-toggle .menu-label{
+    display:inline-block;
+    font-size:13px;
+    font-weight:850;
+    letter-spacing:-.03em;
+    white-space:nowrap;
+  }
+  .menu-toggle .menu-lines{display:block;width:24px;flex:0 0 24px}
+  .menu-toggle .menu-lines i{height:2px;margin:5px 0;background:#111827;border-radius:3px}
+}
+
+@media(max-width:580px){
+  .header-inner{gap:8px}
+  .menu-toggle{min-width:88px;gap:7px}
+  .menu-toggle .menu-label{font-size:12px}
+  .menu-toggle .menu-lines{width:22px;flex-basis:22px}
+}
