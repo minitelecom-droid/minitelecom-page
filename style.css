@@ -510,6 +510,7 @@ body{background:#ffffff;color:var(--text)}
   .foldable-image-wrap{padding:38px 26px 18px}
   .foldable-image-wrap img{max-width:300px;max-height:260px}
 }
+<<<<<<< HEAD
 
 
 /* v8 main title scale refinement */
@@ -517,3 +518,5 @@ body{background:#ffffff;color:var(--text)}
   .store-title{font-size:clamp(46px,5.4vw,74px)}
   .iphone-series{font-size:clamp(72px,7.4vw,108px)}
 }
+=======
+>>>>>>> 8d72398fc828b0ef9b5bca5af76947cdca941144
