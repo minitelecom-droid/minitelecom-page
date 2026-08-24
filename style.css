@@ -510,7 +510,6 @@ body{background:#ffffff;color:var(--text)}
   .foldable-image-wrap{padding:38px 26px 18px}
   .foldable-image-wrap img{max-width:300px;max-height:260px}
 }
-<<<<<<< HEAD
 
 
 /* v8 main title scale refinement */
@@ -518,5 +517,17 @@ body{background:#ffffff;color:var(--text)}
   .store-title{font-size:clamp(46px,5.4vw,74px)}
   .iphone-series{font-size:clamp(72px,7.4vw,108px)}
 }
-=======
->>>>>>> 8d72398fc828b0ef9b5bca5af76947cdca941144
+
+
+/* v9 definitive main-title sizing + clipping fix */
+.store-title{font-size:clamp(44px,4.8vw,68px) !important;line-height:1.02 !important;overflow:visible !important}
+.iphone-series{font-size:clamp(66px,6.8vw,96px) !important;line-height:1.05 !important;overflow:visible !important;padding-right:.12em !important}
+.iphone-series span{display:inline-block !important;padding:0 .05em 0 .01em !important;overflow:visible !important}
+@media(max-width:900px){
+  .store-title{font-size:42px !important}
+  .iphone-series{font-size:62px !important}
+}
+@media(max-width:580px){
+  .store-title{font-size:38px !important}
+  .iphone-series{font-size:56px !important}
+}
