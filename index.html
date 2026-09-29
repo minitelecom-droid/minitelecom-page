@@ -47,7 +47,16 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css?v=11" />
+  <link rel="stylesheet" href="style.css?v=12" />
+  <style>
+    /* Store gallery hard override: compact thumbnails on all devices */
+    .store-photo-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+    .store-photo-card{margin:0!important;overflow:hidden!important;border-radius:18px!important;background:#f5f5f7!important}
+    .store-photo-card img{display:block!important;width:100%!important;height:180px!important;max-height:180px!important;aspect-ratio:auto!important;object-fit:cover!important;object-position:center!important}
+    .store-photo-card figcaption{padding:10px 12px 12px!important;font-size:13px!important;line-height:1.35!important}
+    @media(max-width:900px){.store-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.store-photo-card img{height:165px!important;max-height:165px!important}}
+    @media(max-width:520px){.store-gallery-section{padding-top:30px!important;padding-bottom:30px!important}.store-gallery-heading{margin-bottom:18px!important}.store-photo-grid{gap:8px!important}.store-photo-card{border-radius:12px!important}.store-photo-card img{height:125px!important;max-height:125px!important}.store-photo-card figcaption{padding:8px 8px 9px!important;font-size:11px!important}}
+  </style>
 </head>
 <body>
   <header class="site-header">
